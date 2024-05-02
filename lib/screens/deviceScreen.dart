@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:tranki_tv/screens/license.dart';
 
 class DeviceScreen extends StatelessWidget {
   const DeviceScreen({super.key});
@@ -26,7 +27,29 @@ class DeviceScreen extends StatelessWidget {
                   const Text('Choose Your Dveice',style: TextStyle(fontSize: 30,
                     fontWeight: FontWeight.bold),
                     ),
-                    ElevatedButton(onPressed: (){}, child:const Text('Mobile'))
+                    SizedBox(height: screenSize.height*0.1,),
+                    SizedBox(width: width*0.3,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 255, 17, 0),
+                        foregroundColor: Colors.white
+                        ),
+                        onPressed: (){
+                          {Navigator.push(context, MaterialPageRoute(builder: (context)=> License()),
+                          );
+                          }
+                        }, child:const Text('Mobile')),
+                        
+                    ),
+                    SizedBox(height: hight*0.05,),
+                    SizedBox(width: screenSize.width*0.3,
+                      child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 255, 17, 0),
+                          foregroundColor: Colors.white
+                          ),
+                          onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> License()),
+                          );
+                          }, child:const Text('Smart TV')),
+                    ),
                 ],)
             ],
           ),
