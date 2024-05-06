@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:tranki_tv/screens/deviceScreen.dart';
+import 'package:tranki_tv/features/screens/deviceScreen.dart';
 
 class LoremScreen3 extends StatelessWidget {
   const LoremScreen3({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:tranki_tv/screens/license.dart';
+import 'package:tranki_tv/features/screens/license.dart';
 
 class DeviceScreen extends StatelessWidget {
   const DeviceScreen({super.key});

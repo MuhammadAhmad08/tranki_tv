@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tranki_tv/screens/loremScreen.dart';
+import 'package:tranki_tv/features/screens/loremScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

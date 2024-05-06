@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tranki_tv/screens/loremScreen3.dart';
+import 'package:flutter/widgets.dart';
+import 'package:tranki_tv/features/screens/loremScreen2.dart';
 
-class loremScreen2 extends StatelessWidget {
-  const loremScreen2({super.key});
-
+class loremScreen extends StatelessWidget {
+  loremScreen({super.key});
   @override
   Widget build(BuildContext context) {
     final hight = MediaQuery.of(context).size.height;
@@ -20,7 +20,7 @@ class loremScreen2 extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                     horizontal: hight * 0.095, vertical: width * 0.015),
                 child: const Image(
-                    image: AssetImage('assets/images/Rectangle 22482.png')),
+                    image: AssetImage('assets/images/Rectangle 22482.jpg')),
               ),
               Expanded(
                 child: Column(
@@ -34,7 +34,7 @@ class loremScreen2 extends StatelessWidget {
                       ),
                     ),
                     const Text(
-                      'Lorem ipsum dolor sit amet consectetur. Bibendum nunc elit ut lacus proin quam duis dui elit. Mauris nunc in volutpat commodo leo semper sit sit. In placerat eleifend et adipiscing etiam. Augue vitae.',
+                      'Lorem ipsum dolor sit amet consectetur Bibendum nunc elit ut lacus proin quam duis dui elit. Mauris nunc in volutpat commodo leo semper sit sit. In placerat eleifend et adipiscing etiam. Augue vitae.',
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
@@ -48,7 +48,7 @@ class loremScreen2 extends StatelessWidget {
                                   const Color.fromARGB(255, 255, 17, 0),
                               foregroundColor: Colors.white),
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoremScreen3()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>const loremScreen2()));
                           },
                           child: const Text(
                             'next',
