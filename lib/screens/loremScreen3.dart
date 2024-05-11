@@ -60,6 +60,7 @@ class LoremScreen3 extends StatelessWidget {
             )
           ],
         ),
-      ),);
+      ),
+    );
   }
 }
